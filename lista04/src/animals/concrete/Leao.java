@@ -1,4 +1,21 @@
 package animals.concrete;
 
-public class Leao {
+import animals.abstracts.AnimalTerrestreAB;
+
+public class Leao extends AnimalTerrestreAB {
+
+    @Override
+    public void comer() {
+        this.quantidadeComidaIngerida++;
+    }
+
+    @Override
+    public void moverse() {
+        this.distanciaPercorrida++;
+    }
+
+    @Override
+    public void dormir() {
+        this.horasDeSono++;
+    }
 }
